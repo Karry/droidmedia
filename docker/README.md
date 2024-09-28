@@ -14,7 +14,7 @@ docker build -t droidmedia docker
 
 Then you may switch the branch of droidmedia, prepare your own changes and build it in container:
 ```bash
-docker run --name -v $(pwd):/workdir/external/droidmedia -it droidmedia
+docker run --name droidmedia-devel -v $(pwd):/workdir/external/droidmedia -it droidmedia
 
 # in the container:
 source build/envsetup.sh
